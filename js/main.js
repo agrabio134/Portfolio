@@ -107,3 +107,50 @@
 
 
 })(jQuery);
+const videoUrls = {
+    videoLink1: 'https://play.vidyard.com/ePeGZTVEtpQECwA3eR9MYc?autoplay=1',
+    videoLink2: 'https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fweb.facebook.com%2FPawsProOlongapo%2Fvideos%2F761163319554130%2F&show_text=false&width=560',
+    videoLink3: './img/native.mp4',
+    videoLink4: 'https://play.vidyard.com/yetAnotherVideoId?autoplay=1',
+    videoLink5: 'https://play.vidyard.com/yetAnotherVideoId?autoplay=1',
+    videoLink6: 'https://play.vidyard.com/yetAnotherVideoId?autoplay=1',
+    // Add more video URLs as needed
+};
+
+let currentVideoIndex = 0;
+let videoKeys = Object.keys(videoUrls);
+
+function setVideoUrl(videoId) {
+    currentVideoIndex = videoKeys.indexOf(videoId);
+    const videoUrl = videoUrls[videoId];
+
+    if (videoUrl) {
+        document.getElementById('videoFrame').src = videoUrl;
+
+        var videoModal = new bootstrap.Modal(document.getElementById('videoModal'));
+        videoModal.show();
+    } else {
+        console.error("No video URL found for videoId:", videoId);
+    }
+}
+
+function changeVideo(direction) {
+    currentVideoIndex += direction;
+
+    if (currentVideoIndex < 0) currentVideoIndex = videoKeys.length - 1;
+    if (currentVideoIndex >= videoKeys.length) currentVideoIndex = 0;
+
+    const nextVideoId = videoKeys[currentVideoIndex];
+    setVideoUrl(nextVideoId);
+}
+
+document.getElementById('videoModal').addEventListener('hidden.bs.modal', function () {
+    document.getElementById('videoFrame').src = '';
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl);
+    });
+});

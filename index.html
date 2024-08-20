@@ -22,7 +22,12 @@
     <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
+
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    
+    <script type="text/javascript" async src="https://play.vidyard.com/embed/v4.js"></script>
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 </head>
 
@@ -42,7 +47,7 @@
                             <li><a data-scroll class="nav-link active" href="#home">Home <span
                                         class="sr-only">(current)</span></a></li>
                             <li><a data-scroll class="nav-link" href="#about">About</a></li>
-                            <li><a data-scroll class="nav-link" href="#services">Services</a></li>
+                            <li><a data-scroll class="nav-link" href="#services">Skills</a></li>
                             <li><a data-scroll class="nav-link" href="#works">Works</a></li>
                             <li><a data-scroll class="nav-link" href="#contact">Contact</a></li>
                         </ul>
@@ -59,9 +64,9 @@
                 <h1><span class="rotate">Laravel, Node JS, React JS, Wordpress</span></h1>
                 <p>Developer, I make Awesome and Dynamic<br> Web Application.</p>
                 <ul class="social-link">
-                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="https://www.facebook.com/harvey2.agrabio" target="_blank"><i class="fab fa fa-facebook"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/john-harvey-agrabio-344546214/" target="_blank"><i class="fab fa fa-linkedin"></i></a></li>
+                    <li><a href="https://github.com/agrabio134" target="_blank"><i class="fab fa fa-github"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -78,230 +83,482 @@
                         <div class="section-heading mb-20">
                             <h2>About</h2>
                         </div>
-                        <p>Hello! I’m John Harvey Agrabio, a determined fourth-year student on the path to earning my
-                            BSIT degree. I have a solid foundation in web development and have been delving into various
-                            facets of the field</p>
-                        <p>I’m enthusiastic about applying my skills and continuing my learning journey in the dynamic
-                            IT industry. I thrive in collaborative settings and am always open to new opportunities for
-                            growth and learning</p>
-                        <a href="#" class="default-btn">See My Works</a>
+                        <p>Hello! I’m John Harvey Agrabio, a recent graduate with a BSIT degree as of July 2024. I have a solid foundation in web development and have been delving into various facets of the field.</p>
+                        <p>I’m enthusiastic about applying my skills and continuing my learning journey in the dynamic IT industry. I thrive in collaborative settings and am always open to new opportunities for growth and learning.</p>
+
+                        <a href="CV.pdf" class="default-btn" download>Download My CV</a>
+
+                        <!-- <a data-scroll href="#works"  class="default-btn">See My Works</a> -->
                     </div>
                 </div>
-                <div class="col-md-6 d-none d-md-block">
-                    <img src="img/about-background.jpg" alt="image">
+                <div class="col-md-6 about-image">
+                    <img src="img/about-background.png" alt="image">
                 </div>
             </div>
         </div>
-    </section><!-- about-section -->
+    <!-- </section>
 
-    <section id="services" class="service-section padding">
-        <div class="container-fluid">
-            <div class="row service-area d-flex align-items-center">
-                <div class="col-lg-4 col-md-4 xs-padding">
-                    <div class="section-heading pdl-80">
-                        <h2 class="mb-20">Services</h2>
-                        <p class="mb-20">I’m a Creative Designer and I make things work.<br> Turning your dreams into
-                            reality.</p>
+    <section class="experience-section"> -->
+        <div class="container">
+            <h1 style="text-align: center; margin: 25px 0;">Experience</h1>
+            <div class="experience-container">
+                
+                <!-- Vertical Line -->
+                <div class="experience-line"></div>
+    
+                <!-- Experience Items -->
+                <div class="experience-items-wrapper">
+                    <div class="experience-card left">
+                        <div class="experience-header">
+                            <img src="./img/ek.jpg" alt="Eurekare Corp. logo" class="experience-logo">
+                            <h3 class="experience-job-title">Back End Developer</h3>
+                            <p class="experience-company-name">Eurekare Corp.</p>
+                            <p class="experience-duration">Jul 2024 - Present</p>
+                            <p class="experience-work-type">Remote</p> <!-- Added field -->
+                        </div>
+                        <p class="experience-location">Philippines</p>
                     </div>
-                </div>
-                <div class="col-lg-7 col-md-8 xs-padding">
-                    <div class="row service-wrap">
-                        <div class="col-lg-4 col-sm-6 pd-15">
-                            <div class="service-content">
-                                <i class="icon-layers"></i>
-                                <h3>Interface Design</h3>
-                                <p>Lorem Ipsum is simply more dummy the industry.</p>
-                            </div>
-                        </div><!-- Service-1 -->
-                        <div class="col-lg-4 col-sm-6 pd-15">
-                            <div class="service-content">
-                                <i class="icon-tools"></i>
-                                <h3>Themes Development</h3>
-                                <p>Lorem Ipsum is simply more dummy the industry.</p>
-                            </div>
-                        </div><!-- Service-2 -->
-                        <div class="col-lg-4 col-sm-6 pd-15">
-                            <div class="service-content">
-                                <i class="icon-bargraph"></i>
-                                <h3>Content Marketing</h3>
-                                <p>Lorem Ipsum is simply more dummy the industry.</p>
-                            </div>
-                        </div><!-- Service-3 -->
-                        <div class="col-lg-4 col-sm-6 pd-15">
-                            <div class="service-content">
-                                <i class="icon-phone"></i>
-                                <h3>Mobile Apps</h3>
-                                <p>Lorem Ipsum is simply more dummy the industry.</p>
-                            </div>
-                        </div><!-- Service-4 -->
-                        <div class="col-lg-4 col-sm-6 pd-15">
-                            <div class="service-content">
-                                <i class="icon-bike"></i>
-                                <h3>Responsive Design</h3>
-                                <p>Lorem Ipsum is simply more dummy the industry.</p>
-                            </div>
-                        </div><!-- Service-5 -->
-                        <div class="col-lg-4 col-sm-6 pd-15">
-                            <div class="service-content">
-                                <i class="icon-genius"></i>
-                                <h3>Free Updates</h3>
-                                <p>Lorem Ipsum is simply more dummy the industry.</p>
-                            </div>
-                        </div><!-- Service-6 -->
+    
+                    <div class="experience-card right">
+                        <div class="experience-header">
+                            <img src="./img/iphitech.png" alt="iPhiTech IT and Digital Solutions logo" class="experience-logo">
+                            <h3 class="experience-job-title">Web Developer Internship</h3>
+                            <p class="experience-company-name">iPhiTech IT and Digital Solutions</p>
+                            <p class="experience-duration">Feb 2024 - May 2024 · 4 mos</p>
+                            <p class="experience-work-type">Hybrid</p> <!-- Added field -->
+                        </div>
+                        <p class="experience-location">Pampanga, Central Luzon, Philippines</p>
+                    </div>
+    
+                    <div class="experience-card left">
+                        <div class="experience-header">
+                            <img src="./img/iithub.jpg" alt="The Interns Hub logo" class="experience-logo">
+                            <h3 class="experience-job-title">Student Intern</h3>
+                            <p class="experience-company-name">The IIT Hub</p>
+                            <p class="experience-duration">Jul 2021 - Oct 2021 · 4 mos</p>
+                            <p class="experience-work-type">Remote</p> <!-- Added field -->
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </section><!-- experience-section -->
+
+    <section id="services" class="service-section ">
+        <div class="container-fluid">
+<div class="row service-area d-flex justify-content-center">
+    <div class="col-12 text-center">
+        <div class="section-heading" style="margin: 10px 0;">
+            <h2 class="mb-20">Tech Stack</h2>
+            <p class="mb-20 text-white">Here are the technologies I work with to bring projects to life and ensure seamless functionality.</p>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="service-wrap">
+            <div class="col-lg-3 col-md-4 col-sm-6 pd-15">
+                <div class="service-content">
+                    <i class="fas fa-server icon-large"></i>
+                    <h3>Backend Development</h3>
+                    <div class="tech-list">
+                        <div class="tech-items">
+                        <div><i class="fab fa-php icon-small"></i> PHP</div>
+                        <div><i class="fab fa-node-js icon-small"></i> ExpressJS/NodeJS</div>
+                        <div><i class="fab fa-laravel icon-small"></i> Laravel</div>
+                    </div>
+                    
+                    </div>
+                </div>
+            </div>
+            <!-- Tech Stack-1 -->
+            <div class="col-lg-3 col-md-4 col-sm-6 pd-15">
+                <div class="service-content">
+                    <i class="fas fa-code icon-large"></i>
+                    <h3>Frontend Development</h3>
+                    <div class="tech-list frontend-tech">
+                        <div class="tech-items">
+
+                        <div><i class="fab fa-html5 icon-small"></i> HTML</div>
+                        <div><i class="fab fa-css3-alt icon-small"></i> CSS</div>
+                        <div><i class="fab fa-js icon-small"></i> JS</div>
+                    </div>
+                    <div class="tech-items">
+
+                        <div><i class="fab fa-react icon-small"></i> ReactJS</div>
+                        <div><i class="fab fa-bootstrap icon-small"></i> Bootstrap</div>
+                    </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Tech Stack-2 -->
+            <div class="col-lg-3 col-md-4 col-sm-6 pd-15">
+                <div class="service-content">
+                    <i class="fas fa-pencil-ruler icon-large"></i>
+                    <h3>CMS</h3>
+                    <div class="tech-list">
+                        <div class="tech-items">
+
+                        <div><i class="fab fa-wordpress icon-small"></i> WordPress</div>
+                        <div><i class="fab fa-shopify icon-small"></i> Shopify</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Tech Stack-3 -->
+            <div class="col-lg-3 col-md-4 col-sm-6 pd-15">
+                <div class="service-content">
+                    <i class="fas fa-database icon-large"></i>
+                    <h3>Database</h3>
+                    <div class="tech-list">
+                        <div class="tech-items">
+
+
+                        <div><i class="fas fa-database icon-small"></i> MySQL</div>
+                        <div><i class="fas fa-database icon-small"></i> MSSQL</div>
+                        <div><i class="fas fa-fire icon-small"></i> Firebase</div>
+                    </div>
+
+                        <div class="tech-items">
+
+                        <div><i class="fas fa-leaf icon-small"></i> MongoDB</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Tech Stack-4 -->
+            <div class="col-lg-3 col-md-4 col-sm-6 pd-15">
+                <div class="service-content">
+                    <i class="fas fa-mobile-alt icon-large"></i>
+                    <h3>Mobile Development</h3>
+                    <div class="tech-list">
+                        <div class="tech-items">
+
+                        <div><i class="fab fa-react icon-small"></i> React Native</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Tech Stack-5 -->
+            <div class="col-lg-3 col-md-4 col-sm-6 pd-15">
+                <div class="service-content">
+                    <i class="fas fa-cloud icon-large"></i>
+                    <h3>Hosting</h3>
+                    <div class="tech-list">
+                        <div class="tech-items">
+
+                        <div><i class="fas fa-cloud icon-small"></i> Hostinger</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Tech Stack-6 -->
+        </div>
+    </div>
+</div>
+
+            
+            
+            
+            
         </div>
     </section><!-- service-section -->
 
     <section id="works" class="portfolio-section bg-dark">
         <div class="container-fluid">
-            <div class="row portfolio-wrap d-flex align-items-center">
-                <div class="col-md-4 xs-padding">
-                    <div class="section-heading pdl-80">
-                        <h2 class="mb-20">Portfolio</h2>
-                        <p class="mb-20">I’m a Creative Designer and I make things work.<br> Turning your dreams into
-                            reality.</p>
-                        <a href="#" class="default-btn">Our All Works</a>
+            <div class="row portfolio-wrap">
+                <!-- Section Heading -->
+                <div class="col-md-12 section-heading">
+                    <h2 class="mb-20">Portfolio</h2>
+                    <p class="mb-20">I’m a Creative Designer and I make things work. Turning your dreams into reality.</p>
+                    <a href="https://github.com/agrabio134" target="_blank" class="default-btn">Visit Github</a>
+                </div>
+                <!-- Portfolio Items -->
+                <div class="col-md-12">
+                    <div class="row portfolio-items">
+                        <!-- Portfolio Item 1 -->
+                        <div class="col-lg-4 col-sm-6">
+                            <div class="portfolio-box">
+                                <div class="portfolio-thumb">
+                                    <img
+                                        style="width: 100%; margin: auto; display: block; height: 350px;"
+                                        class="vidyard-player-embed"
+                                        src="https://play.vidyard.com/ePeGZTVEtpQECwA3eR9MYc.jpg"
+                                        alt="Video Thumbnail 1"
+                                    />
+                                </div>
+                                <button class="hover" data-bs-toggle="modal" data-bs-target="#videoModal" onclick="setVideoUrl('videoLink1')">
+                                    <div class="portfolio-card">
+                                        <h1 class="title">Python Live Quiz</h1>
+                                        <a href="https://github.com/agrabio134/python_livequiz" target="_blank" class="github-link">
+                                            <i class="fab fa-github icon github-icon"></i>
+                                            <span class="github-text">View on GitHub</span>
+                                        </a>
+                                        <div class="icons">
+                                            <i class="fab fa-python icon" data-bs-toggle="tooltip" title="Python"></i>
+                                            <i class="fab fa-envira icon" data-bs-toggle="tooltip" title="MongoDB"></i>
+                                            <i class="fab fa-html5 icon" data-bs-toggle="tooltip" title="HTML"></i>
+                                            <i class="fab fa-css3-alt icon" data-bs-toggle="tooltip" title="CSS"></i>
+                                        </div>
+                                        <p class="description">
+                                            A real-time quiz application built with Python, Flask, MongoDB, and Socket.IO.
+                                        </p>
+                                        <div class="play">
+                                            <span>Play Video</span>
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+    
+                        <!-- Portfolio Item 2 -->
+                        <div class="col-lg-4 col-sm-6">
+                            <div class="portfolio-box">
+                                <div class="portfolio-thumb">
+                                    <img
+                                        style="width: 100%; margin: auto; display: block; height: 350px;"
+                                        class="vidyard-player-embed"
+                                        src="./img/vatan.jpg"
+                                        alt="Video Thumbnail 3"
+                                    />
+                                </div>
+                                <button class="hover" data-bs-toggle="modal" data-bs-target="#videoModal" onclick="setVideoUrl('videoLink2')">
+                                    <div class="portfolio-card">
+                                        <h1 class="title">Paws Pro</h1>
+                                        <a href="https://happypawsolongapo.online/" target="_blank" class="github-link">
+                                            <i class="fas fa-link icon link-icon"></i> <!-- Link icon -->
+                                            <span class="github-text">Visit Website</span> <!-- Text next to the icon -->
+                                        </a>
+                                        
+                                        <div class="icons">
+                                            <i class="fab fa-react icon" data-bs-toggle="tooltip" title="ReactJS"></i>
+                                            <i class="fab fa-php icon" data-bs-toggle="tooltip" title="PHP"></i>
+                                            <i class="fas fa-database icon" data-bs-toggle="tooltip" title="MySQL"></i>
+                                            <i class="fab fa-css3-alt icon" data-bs-toggle="tooltip" title="CSS"></i>
+
+                                        </div>
+                                        <p class="description">
+                                            Capstone Project for Vatan Animal Hospital
+                                        </p>
+                                        <div class="play">
+                                            <span>Play Video</span>
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+    
+                        <!-- Portfolio Item 3 -->
+                        <div class="col-lg-4 col-sm-6">
+                            <div class="portfolio-box">
+                                <div class="portfolio-thumb">
+                                    <img
+                                        style="width: auto; margin: auto; display: block; height: 350px; object-fit: cover;"
+                                        class="vidyard-player-embed"
+                                        src="./img/react-native.jpg"
+                                        alt="Video Thumbnail 3"
+                                    />
+                                </div>
+                                <button class="hover" data-bs-toggle="modal" data-bs-target="#videoModal" onclick="setVideoUrl('videoLink3')">
+                                    <div class="portfolio-card">
+                                        <h1 class="title">
+                                           Mobile Appointment System</h1>
+                                        <a href="https://github.com/agrabio134/Tattoo_shop_App" target="_blank" class="github-link">
+                                            <i class="fab fa-github icon github-icon"></i>
+                                            <span class="github-text">View on GitHub</span>
+                                        </a>
+                                        <div class="icons">
+                                            <i class="fab fa-react icon" data-bs-toggle="tooltip" title="React Native"></i>
+                                            <i class="fas fa-fire icon" data-bs-toggle="tooltip" title="Firebase"></i>
+                                        </div>
+                                        <p class="description">
+                                            Mobile app for managing tattoo appointments with React Native and Firebase.
+                                        </p>
+                                        <div class="play">
+                                            <span>Play Video</span>
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+<!--                         
+                        <div class="col-lg-4 col-sm-6">
+                            <div class="portfolio-box">
+                                <div class="portfolio-thumb">
+                                    <img
+                                        style="width: 100%; margin: auto; display: block; height: 350px;"
+                                        class="vidyard-player-embed"
+                                        src="https://play.vidyard.com/ePeGZTVEtpQECwA3eR9MYc.jpg"
+                                        alt="Video Thumbnail 3"
+                                    />
+                                </div>
+                                <button class="hover" data-bs-toggle="modal" data-bs-target="#videoModal" onclick="setVideoUrl('videoLink3')">
+                                    <div class="portfolio-card">
+                                        <h1 class="title">Python Live Quiz 3</h1>
+                                        <a href="https://github.com/agrabio134/python_livequiz" target="_blank" class="github-link">
+                                            <i class="fab fa-github icon github-icon"></i>
+                                            <span class="github-text">View on GitHub</span>
+                                        </a>
+                                        <div class="icons">
+                                            <i class="fab fa-python icon"></i>
+                                            <i class="fab fa-html5 icon"></i>
+                                            <i class="fab fa-css3-alt icon"></i>
+                                        </div>
+                                        <p class="description">
+                                            A real-time quiz application built with Python, Flask, MongoDB, and Socket.IO.
+                                        </p>
+                                        <div class="play">
+                                            <span>Play Video</span>
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+    
+                        
+                        <div class="col-lg-4 col-sm-6">
+                            <div class="portfolio-box">
+                                <div class="portfolio-thumb">
+                                    <img
+                                        style="width: 100%; margin: auto; display: block; height: 350px;"
+                                        class="vidyard-player-embed"
+                                        src="https://play.vidyard.com/ePeGZTVEtpQECwA3eR9MYc.jpg"
+                                        alt="Video Thumbnail 3"
+                                    />
+                                </div>
+                                <button class="hover" data-bs-toggle="modal" data-bs-target="#videoModal" onclick="setVideoUrl('videoLink3')">
+                                    <div class="portfolio-card">
+                                        <h1 class="title">Python Live Quiz 3</h1>
+                                        <a href="https://github.com/agrabio134/python_livequiz" target="_blank" class="github-link">
+                                            <i class="fab fa-github icon github-icon"></i>
+                                            <span class="github-text">View on GitHub</span>
+                                        </a>
+                                        <div class="icons">
+                                            <i class="fab fa-python icon"></i>
+                                            <i class="fab fa-html5 icon"></i>
+                                            <i class="fab fa-css3-alt icon"></i>
+                                        </div>
+                                        <p class="description">
+                                            A real-time quiz application built with Python, Flask, MongoDB, and Socket.IO.
+                                        </p>
+                                        <div class="play">
+                                            <span>Play Video</span>
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+    
+                        
+                        <div class="col-lg-4 col-sm-6">
+                            <div class="portfolio-box">
+                                <div class="portfolio-thumb">
+                                    <img
+                                        style="width: 100%; margin: auto; display: block; height: 350px;"
+                                        class="vidyard-player-embed"
+                                        src="https://play.vidyard.com/ePeGZTVEtpQECwA3eR9MYc.jpg"
+                                        alt="Video Thumbnail 3"
+                                    />
+                                </div>
+                                <button class="hover" data-bs-toggle="modal" data-bs-target="#videoModal" onclick="setVideoUrl('videoLink3')">
+                                    <div class="portfolio-card">
+                                        <h1 class="title">Python Live Quiz 3</h1>
+                                        <a href="https://github.com/agrabio134/python_livequiz" target="_blank" class="github-link">
+                                            <i class="fab fa-github icon github-icon"></i>
+                                            <span class="github-text">View on GitHub</span>
+                                        </a>
+                                        <div class="icons">
+                                            <i class="fab fa-python icon"></i>
+                                            <i class="fab fa-html5 icon"></i>
+                                            <i class="fab fa-css3-alt icon"></i>
+                                        </div>
+                                        <p class="description">
+                                            A real-time quiz application built with Python, Flask, MongoDB, and Socket.IO.
+                                        </p>
+                                        <div class="play">
+                                            <span>Play Video</span>
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+     -->
+    
                     </div>
                 </div>
-                <div class="col-md-8">
-                    <div class="row portfolio-items">
-                        <div class="col-lg-4 col-sm-6">
-                            <div class="portfolio-box">
-                                <div class="portfolio-thumb">
-                                    <img src="img/prtf-1.jpg" alt="img">
-                                </div>
-                                <a href="img/prtf-1.jpg" class="hover img-popup" data-gall="galleryimg">
-                                    <div>
-                                        <img src="img/zoom.png" alt="icon">
-                                    </div>
-                                </a>
-                            </div>
-                        </div><!-- Portfolio-1 -->
-                        <div class="col-lg-4 col-sm-6">
-                            <div class="portfolio-box">
-                                <div class="portfolio-thumb">
-                                    <img src="img/prtf-2.jpg" alt="img">
-                                </div>
-                                <a href="img/prtf-2.jpg" class="hover img-popup" data-gall="galleryimg">
-                                    <div>
-                                        <img src="img/zoom.png" alt="icon">
-                                    </div>
-                                </a>
-                            </div>
-                        </div><!-- Portfolio-2 -->
-                        <div class="col-lg-4 col-sm-6">
-                            <div class="portfolio-box">
-                                <div class="portfolio-thumb">
-                                    <img src="img/prtf-3.gif" alt="img">
-                                </div>
-                                <a href="img/prtf-3.gif" class="hover img-popup" data-gall="galleryimg">
-                                    <div>
-                                        <img src="img/zoom.png" alt="icon">
-                                    </div>
-                                </a>
-                            </div>
-                        </div><!-- Portfolio-3 -->
-                        <div class="col-lg-4 col-sm-6">
-                            <div class="portfolio-box">
-                                <div class="portfolio-thumb">
-                                    <img src="img/prtf-4.jpg" alt="img">
-                                </div>
-                                <a href="img/prtf-4.jpg" class="hover img-popup" data-gall="galleryimg">
-                                    <div>
-                                        <img src="img/zoom.png" alt="icon">
-                                    </div>
-                                </a>
-                            </div>
-                        </div><!-- Portfolio-4 -->
-                        <div class="col-lg-4 col-sm-6">
-                            <div class="portfolio-box">
-                                <div class="portfolio-thumb">
-                                    <img src="img/prtf-5.jpg" alt="img">
-                                </div>
-                                <a href="img/prtf-5.jpg" class="hover img-popup" data-gall="galleryimg">
-                                    <div>
-                                        <img src="img/zoom.png" alt="icon">
-                                    </div>
-                                </a>
-                            </div>
-                        </div><!-- Portfolio-5 -->
-                        <div class="col-lg-4 col-sm-6">
-                            <div class="portfolio-box">
-                                <div class="portfolio-thumb">
-                                    <img src="img/prtf-6.jpg" alt="img">
-                                </div>
-                                <a href="img/prtf-6.jpg" class="hover img-popup" data-gall="galleryimg">
-                                    <div>
-                                        <img src="img/zoom.png" alt="icon">
-                                    </div>
-                                </a>
-                            </div>
-                        </div><!-- Portfolio-6 -->
+            </div>
+        </div>
+    
+        <!-- Modal -->
+        <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered custom-large-modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <button id="prevButton" class="control-btn fa fa-arrow-left icon" onclick="changeVideo(-1)"></button>
+                        <iframe id="videoFrame" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <button id="nextButton" class="control-btn fa fa-arrow-right icon" onclick="changeVideo(1)"></button>
                     </div>
                 </div>
             </div>
         </div>
     </section><!-- portfolio-section -->
+    
 
-    <section class="cta-section padding">
-        <div class="container">
-            <div class="cta-wrap text-center">
-                <div class="cta-content">
-                    <h2>A Creative studio in Melbourne, <br> passionate about design, art and <br>creativity, since
-                        1950.</h2>
-                    <a href="#" class="default-btn">Contact With Us</a>
-                </div>
-            </div>
+    
+    
+
+    <section id="contact" class="contact-section">
+        <div class="container text-center">
+            <h2>Get in Touch</h2>
+            <p>If you’d like to collaborate on projects or have any inquiries, feel free to reach out to me:</p>
+            <p>
+                <a href="mailto:agrabioharvey@gmail.com" class="contact-email">agrabioharvey@gmail.com</a><br>
+                <a href="tel:+639751374524" class="contact-phone">+63 975 137 4524</a><br>
+                <a href="https://www.linkedin.com/in/john-harvey-agrabio-344546214/" target="_blank" class="contact-linkedin">Connect on LinkedIn</a>
+            </p>
         </div>
-    </section><!-- cta-section -->
+    </section>
+    
+    
 
-    <section id="contact" class="contact-section bg-dark">
-        <div class="container-fluid">
-            <div class="row contact-wrap">
-                <div class="col-lg-6 col-md-8 offset-md-2 offset-lg-0 pdl-80">
-                    <div class="contact-info mb-30">
-                        <h2>let's work together projects <br> just send me email here</h2>
+    <footer id="footer" class="footer-section bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="footer-about">
+                        <h4>About Me</h4>
+                        <p>I'm John Harvey Agrabio, a web developer with a passion for creating dynamic and engaging web applications. If you have any questions or want to get in touch, feel free to reach out!</p>
                     </div>
-                    <div class="contact-form">
-                        <form action="contact.php" method="post" id="ajax_form" class="form-horizontal">
-                            <div class="form-group colum-row row">
-                                <div class="col-sm-6">
-                                    <input type="text" id="name" name="name" class="form-control" placeholder="Name"
-                                        required>
-                                </div>
-                                <div class="col-sm-6">
-                                    <input type="email" id="email" name="email" class="form-control" placeholder="Email"
-                                        required>
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <div class="col-md-12">
-                                    <textarea id="message" name="message" cols="30" rows="5"
-                                        class="form-control message" placeholder="Message" required></textarea>
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <div class="col-md-12">
-                                    <button id="submit" class="default-btn submit-button" type="submit">Send
-                                        Message</button>
-                                </div>
-                            </div>
-                            <div id="form-messages" class="alert" role="alert"></div>
-                        </form>
+                </div>
+                <div class="col-md-4">
+                    <div class="footer-contact">
+                        <h4>Contact Information</h4>
+                        <ul class="contact-info">
+                            <li><i class="fas fa-envelope"></i> <a href="mailto:agrabioharvey@gmail.com">agrabioharvey@gmail.com</a></li>
+                            <li><i class="fas fa-phone"></i> <a href="tel:+639751374524">+63 975 137 4524</a></li>
+                            <li><i class="fas fa-map-marker-alt"></i> Olongapo City, Philippines</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="footer-social">
+                        <h4>Connect With Me</h4>
+                        <a href="https://www.facebook.com/harvey2.agrabio" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.linkedin.com/in/john-harvey-agrabio-344546214/" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/agrabio134" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
                     </div>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p>&copy; 2024 John Harvey Agrabio. All rights reserved.</p>
+                </div>
+            </div>
         </div>
-        <div id="google-map"></div><!-- /#google-map -->
-    </section><!-- contat-section -->
-
-    <footer class="footer-section align-center">
-        <div class="container">
-            <p>&copy; 2024 Harvs Powered by UdesignX</p>
-        </div>
-    </footer><!-- /.footer_section -->
+    </footer>
+    
 
     <a data-scroll href="#header" id="scroll-to-top"><i class="arrow_carrot-up"></i></a>
 
@@ -317,7 +574,11 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBGm_weV-pxqGWuW567g78KhUd7n0p97RY"></script>
     <script src="js/contact.js"></script>
     <script src="js/main.js"></script>
+  <!-- Font Awesome JS -->
 
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>

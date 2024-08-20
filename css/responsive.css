@@ -40,6 +40,42 @@
         height: 260px;
         position: inherit;
     }
+
+    .tech-list {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px; /* Space between items */
+        /* border: 1px solid yellow; */
+        width: 100%;
+    }
+    
+    .tech-list .tech-items div {
+        display: flex;
+        align-items: center;
+        gap: 10px; /* Space between icon and text */
+        /* border: 1px solid rgb(94, 255, 0); */
+        width: 100%;
+        
+    
+    
+    }
+    .tech-items{
+        /* border: 1px solid red; */
+        display: flex;
+        justify-content: start;
+
+        align-items: center;
+        width: 100%;
+        gap: 5px;
+        
+    }
+    
+
+    .service-content {
+        height:fit-content;
+    }
+    
 }
 /* ---- End of max-width 992px CSS ---- */
 
@@ -56,6 +92,11 @@
     body, p{
         font-size: 12px;
         line-height: 22px;
+    }
+    .about-section, .service-section{
+        padding: 0;
+    
+    
     }
     h1{
         font-size: 30px!important;
@@ -121,3 +162,32 @@
 	
 }
 /* ---- End of max-width 380px CSS ---- */
+@media (max-width: 768px) {
+    .experience-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .experience-line {
+        width: 1px;
+    }
+
+    .experience-items-wrapper {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .experience-card {
+        width: 90%;
+    }
+}
+
+@media (max-width: 767px) {
+    .footer-section {
+        text-align: center;
+    }
+    
+    .footer-about, .footer-contact {
+        margin-bottom: 20px;
+    }
+}
