@@ -191,3 +191,78 @@
         margin-bottom: 20px;
     }
 }
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    .portfolio-section {
+        padding: 60px 15px; /* Reduce padding */
+    }
+
+    .portfolio-box {
+        margin-bottom: 30px; /* Add space between items */
+    }
+
+    .portfolio-card {
+        max-width: 100%; /* Ensure full width on smaller screens */
+    }
+
+    .portfolio-thumb img {
+        height: auto; /* Adjust height for better fit */
+    }
+
+    .control-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .experience-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .experience-line {
+        display: none; /* Hide the line on smaller screens */
+    }
+
+    .experience-items-wrapper {
+        margin: 0; /* Remove left and right margins */
+        padding: 0 15px; /* Add padding for better spacing */
+    }
+
+    .experience-card {
+        width: 100%; /* Full width for mobile devices */
+        max-width: 500px; /* Limit the maximum width */
+        margin-bottom: 20px;
+    }
+
+    .experience-card.left, .experience-card.right {
+        text-align: center; /* Center align text for mobile */
+    }
+
+    .experience-logo {
+        width: 60px; /* Adjust logo size for smaller screens */
+    }
+
+    .experience-job-title {
+        font-size: 14px; /* Smaller font size for better fit */
+    }
+
+    .experience-company-name {
+        font-size: 12px;
+    }
+
+    .experience-duration, .experience-description, .experience-location, .experience-skills {
+        font-size: 12px; /* Smaller font size for mobile */
+    }
+
+    .about-content{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    
+    }
+}

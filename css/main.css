@@ -593,6 +593,7 @@ ul.nav > li > a.active{
 }
 .about-content{
     padding-right: 100px;
+    text-align: justify;
 
 }
 .about-content .default-btn{
@@ -701,98 +702,106 @@ ul.nav > li > a.active{
 /* ==========================================================================
    Portfolio Section
    ========================================================================== */
-.portfolio-section{
-    padding: 60px 350px;
+
+/* Center the modal-dialog */
+.custom-large-modal .modal-dialog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    max-width: none;
+    position: relative;
 }
-.portfolio-section .section-heading p{
+
+/* Style the modal-content */
+.custom-large-modal .modal-content {
+    height: 80vh;
+    width: 90vw;
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Center the iframe within the modal-body */
+.custom-large-modal .modal-body {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* Style the iframe to fit within the modal-body */
+.custom-large-modal .modal-body iframe {
+    width: 100%;
+    height: 100%;
+}
+
+/* Portfolio Section */
+.portfolio-section {
+    padding: 60px 220px; /* Adjust padding for mobile */
+}
+
+.portfolio-section .section-heading p {
     color: #ddd;
 }
 
-.portfolio-wrap{
+/* Portfolio Wrap */
+.portfolio-wrap {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap; /* Allow items to wrap */
+    justify-content: center; /* Center items horizontally */
 }
-.portfolio-content{}
-.portfolio-thumb img{
+
+.portfolio-content {}
+
+/* Portfolio Thumb */
+.portfolio-thumb img {
     width: 100%;
 }
-.portfolio-thumb{
-    position: relative;
-}
-.portfolio-box .hover{
+
+/* Portfolio Box Hover Effect */
+.portfolio-box .hover {
     position: absolute;
     width: 100%;
     height: 100%;
     left: 0;
     top: 0;
-    
     opacity: 0;
     visibility: hidden;
     padding: 10px;
 }
-.portfolio-box .hover div{
-    background-color: rgba(255,255,255,0.9);
+
+.portfolio-box .hover div {
+    background-color: rgba(255, 255, 255, 0.9);
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     height: 100%;
 }
-.portfolio-box:hover .hover{
+
+.portfolio-box:hover .hover {
     opacity: 1;
     visibility: visible;
 }
 
-    /* Center the modal-dialog */
-    .custom-large-modal .modal-dialog {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0; /* Remove default margin */
-        max-width: none; /* Remove any maximum width constraints */
-        position: relative;
-        
-    }
-
-    /* Style the modal-content */
-    .custom-large-modal .modal-content {
-        height: 80vh; /* Set the height of the modal content */
-        width: 90vw; /* Adjust the width as needed */
-        box-sizing: border-box; /* Include border in width/height calculation */
-        position: absolute; /* Absolute positioning */
-        top: 50%; /* Position from the top */
-        left: 50%; /* Position from the left */
-        transform: translate(-50%, -50%); /* Center the element */
-    }
-
-    /* Center the iframe within the modal-body */
-    .custom-large-modal .modal-body {
-        padding: 0; /* Remove padding to maximize iframe size */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%; /* Full height of the modal content */
-    }
-
-    /* Style the iframe to fit within the modal-body */
-    .custom-large-modal .modal-body iframe {
-        width:100%;
-        height: 100%; /* Adjust height as needed */
-    }
+/* Portfolio Card */
 .portfolio-card {
-  border: 1px solid #ddd;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  max-width: 400px;
-  margin: 0 auto;
-  overflow: hidden;
-
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 80%; /* Allow full width */
+    margin: 10px auto; /* Center and add margin */
+    overflow: hidden;
 }
 
 .portfolio-card .description {
@@ -804,55 +813,54 @@ ul.nav > li > a.active{
 }
 
 .title {
-  color: black;
-  margin-bottom: 20px;
+    color: black;
+    margin-bottom: 10px; /* Adjust margin */
 }
 
 .icons {
-  display: flex;
-  align-items: center;
-  margin: 10px 0;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
 }
+
 .github-text {
     font-size: 16px;
     color: #333;
-  }
-  
+}
+
 .github-link {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 20px; /* Space between GitHub link and other icons */
+    margin-bottom: 20px;
     text-decoration: none;
-    color: #333; /* Adjust color as needed */
-  }
-  
-  .github-icon {
-    font-size: 36px; /* Larger size for emphasis */
-    margin-bottom: 5px; /* Space between icon and text */
-  }
+    color: #333;
+}
+
+.github-icon {
+    font-size: 36px;
+    margin-bottom: 5px;
+}
 
 .icon {
-  font-size: 32px;
-  margin: 10px;
-  color: #333; /* Adjust color as needed */
+    font-size: 24px; /* Adjust icon size for mobile */
+    margin: 10px;
+    color: #333;
 }
 
 .description {
-  color: #555;
-  font-size: 14px;
-  margin: 10px 0;
+    color: #555;
+    font-size: 14px;
+    margin: 10px 0;
 }
 
-
-.play:hover{
+.play:hover {
     cursor: pointer;
     color: #1c6ee9;
 }
 
-
 .control-btn {
-    background-color: #007bff; /* Blue color */
+    background-color: #007bff;
     border: none;
     color: white;
     font-size: 24px;
@@ -871,7 +879,6 @@ ul.nav > li > a.active{
 
 #prevButton {
     left: 10px;
-
 }
 
 #nextButton {
@@ -879,7 +886,7 @@ ul.nav > li > a.active{
 }
 
 .control-btn:hover {
-    background-color: #0056b3; /* Darker blue on hover */
+    background-color: #0056b3;
     transform: translateY(-50%) scale(1.1);
 }
 
@@ -887,10 +894,13 @@ ul.nav > li > a.active{
     outline: none;
 }
 
+
+
 /* ==========================================================================
    experience Section
    ========================================================================== */
-   .experience-section {
+/* General Styles */
+.experience-section {
     padding: 40px 0;
 }
 
