@@ -111,7 +111,7 @@ const videoUrls = {
     videoLink1: 'https://play.vidyard.com/ePeGZTVEtpQECwA3eR9MYc?autoplay=1',
     videoLink2: 'https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fweb.facebook.com%2FPawsProOlongapo%2Fvideos%2F761163319554130%2F&show_text=false&width=560',
     videoLink3: './img/native.mp4',
-    videoLink4: 'https://play.vidyard.com/yetAnotherVideoId?autoplay=1',
+    videoLink4: './img/seleste.mp4',
     videoLink5: 'https://play.vidyard.com/yetAnotherVideoId?autoplay=1',
     videoLink6: 'https://play.vidyard.com/yetAnotherVideoId?autoplay=1',
     // Add more video URLs as needed
@@ -135,30 +135,14 @@ function setVideoUrl(videoId) {
 }
 
 function changeVideo(direction) {
-    // Update the current video index based on the direction
     currentVideoIndex += direction;
 
-    // Wrap around the index if it's out of bounds
     if (currentVideoIndex < 0) currentVideoIndex = videoKeys.length - 1;
     if (currentVideoIndex >= videoKeys.length) currentVideoIndex = 0;
 
-    // Get the next video ID
     const nextVideoId = videoKeys[currentVideoIndex];
-
-    // Check if the next video URL exists
-    const nextVideoUrl = videoUrls[nextVideoId];
-
-    if (nextVideoUrl) {
-        // Set the video URL if it exists
-        setVideoUrl(nextVideoId);
-    } else {
-        // If the video URL does not exist, handle it accordingly
-        console.error("Video not found for ID:", nextVideoId);
-        // Switch to image gallery if no video found
-        showPortfolioItem('gallery', ['./img/gallery/1.png', './img/gallery/2.png', './img/gallery/3.png', './img/gallery/4.png', './img/gallery/5.png', './img/gallery/6.png']);
-    }
+    setVideoUrl(nextVideoId);
 }
-
 
 document.getElementById('videoModal').addEventListener('hidden.bs.modal', function () {
     document.getElementById('videoFrame').src = '';
@@ -169,36 +153,4 @@ document.addEventListener('DOMContentLoaded', function () {
     var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
         return new bootstrap.Tooltip(tooltipTriggerEl);
     });
-});
-
-function showPortfolioItem(type, items) {
-    if (type === 'gallery') {
-        showGallery(items);
-    }
-}
-
-function showGallery(images) {
-    const imageCarousel = document.getElementById("imageCarousel");
-    const carouselImages = document.getElementById("carouselImages");
-
-    // Populate carousel images
-    carouselImages.innerHTML = images.map((imgSrc, index) => `
-        <div class="carousel-item ${index === 0 ? 'active' : ''}">
-            <img src="${imgSrc}" class="d-block w-100" alt="Gallery Image ${index + 1}">
-        </div>
-    `).join('');
-
-    // Hide video frame and display the image carousel
-    document.getElementById('videoFrame').style.display = 'none';
-    imageCarousel.style.display = 'block';
-
-    // Show modal
-    var imageModal = new bootstrap.Modal(document.getElementById('videoModal'));
-    imageModal.show();
-}
-
-// Reset modal when closed
-document.getElementById('videoModal').addEventListener('hidden.bs.modal', function () {
-    document.getElementById('videoFrame').src = '';
-    document.getElementById("imageCarousel").style.display = 'none';
 });
