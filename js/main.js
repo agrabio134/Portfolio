@@ -113,7 +113,7 @@ const videoUrls = {
     videoLink3: './img/native.mp4',
     videoLink4: './img/seleste.mp4',
     videoLink5: './img/washup.mp4',
-    videoLink6: 'https://play.vidyard.com/yetAnotherVideoId?autoplay=1',
+    videoLink6: './img/react-cal.mp4',
     // Add more video URLs as needed
 };
 
