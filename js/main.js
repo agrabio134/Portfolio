@@ -154,3 +154,35 @@ document.addEventListener('DOMContentLoaded', function () {
         return new bootstrap.Tooltip(tooltipTriggerEl);
     });
 });
+
+function showPortfolioItem(type, items) {
+    if (type === 'gallery') {
+        showGallery(items);
+    }
+}
+
+function showGallery(images) {
+    const imageCarousel = document.getElementById("imageCarousel");
+    const carouselImages = document.getElementById("carouselImages");
+
+    // Populate carousel images
+    carouselImages.innerHTML = images.map((imgSrc, index) => `
+        <div class="carousel-item ${index === 0 ? 'active' : ''}">
+            <img src="${imgSrc}" class="d-block w-100" alt="Gallery Image ${index + 1}">
+        </div>
+    `).join('');
+
+    // Hide video frame and display the image carousel
+    document.getElementById('videoFrame').style.display = 'none';
+    imageCarousel.style.display = 'block';
+
+    // Show modal
+    var imageModal = new bootstrap.Modal(document.getElementById('videoModal'));
+    imageModal.show();
+}
+
+// Reset modal when closed
+document.getElementById('videoModal').addEventListener('hidden.bs.modal', function () {
+    document.getElementById('videoFrame').src = '';
+    document.getElementById("imageCarousel").style.display = 'none';
+});

@@ -381,30 +381,69 @@
                             </div>
                         </div>
                         
+                        <!-- Portfolio Item 4 -->
 
-    
-    
-                    </div>
-                </div>
-            </div>
-        </div>
-    
-        <!-- Modal -->
-        <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered custom-large-modal">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <button id="prevButton" class="control-btn fa fa-arrow-left icon" onclick="changeVideo(-1)"></button>
-                        <iframe id="videoFrame" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <button id="nextButton" class="control-btn fa fa-arrow-right icon" onclick="changeVideo(1)"></button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section><!-- portfolio-section -->
+                        <!-- Portfolio Item with Image Gallery Trigger -->
+                        <div class="col-lg-4 col-sm-6">
+                            <div class="portfolio-box">
+                                <div class="portfolio-thumb">
+                                    <img
+                                        style="width: auto; margin: auto; display: block; height: 350px; object-fit: cover;"
+                                        src="./img/gallery/1.png"
+                                        alt="Image Gallery Thumbnail"
+                                    />
+                                </div>
+                                <button class="hover" data-bs-toggle="modal" data-bs-target="#videoModal" onclick="showPortfolioItem('gallery', ['./img/gallery/1.png', './img/gallery/2.png', './img/gallery/3.png', './img/gallery/4.png', './img/gallery/5.png', './img/gallery/6.png'])">
+                                    <div class="portfolio-card">
+                                        <h1 class="title">SELESTE</h1>
+                                        <a href="https://github.com/agrabio134/seleste-2-html-css" target="_blank" class="github-link">
+                                            <i class="fab fa-github icon github-icon"></i>
+                                            <span class="github-text">View on GitHub</span>
+                                        </a>
+                                        <div class="icons">
+                                            <i class="fab fa-html5 icon" data-bs-toggle="tooltip" title="HTML"></i>
+                                            <i class="fab fa-css3 icon" data-bs-toggle="tooltip" title="CSS"></i>
+                                            <i class="fab fa-js icon" data-bs-toggle="tooltip" title="JavaScript"></i>
+                                        </div>
+                                        <p class="description">A Web Design template created using HTML & CSS</p>
+                                        <div class="play">
+                                            <span>View Images</span>
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Modal Structure -->
+                        <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered custom-large-modal">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <!-- Video Controls (Only Visible for Videos) -->
+                                        <button id="prevButton" class="control-btn fa fa-arrow-left icon" onclick="changeVideo(-1)"></button>
+                                        <iframe id="videoFrame" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        <button id="nextButton" class="control-btn fa fa-arrow-right icon" onclick="changeVideo(1)"></button>
+                                    
+                                        <!-- Image Gallery (Only Visible for Image Galleries) -->
+                                        <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel" style="display: none;">
+                                            <div class="carousel-inner" id="carouselImages"></div>
+                                            <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true" ></span>
+                                                <span class="visually-hidden">Next</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+        </section><!-- portfolio-section -->
     
 
     
