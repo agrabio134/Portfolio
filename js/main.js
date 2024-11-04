@@ -112,7 +112,7 @@ const videoUrls = {
     videoLink2: 'https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fweb.facebook.com%2FPawsProOlongapo%2Fvideos%2F761163319554130%2F&show_text=false&width=560',
     videoLink3: './img/native.mp4',
     videoLink4: './img/seleste.mp4',
-    videoLink5: 'https://play.vidyard.com/yetAnotherVideoId?autoplay=1',
+    videoLink5: './img/washup.mp4',
     videoLink6: 'https://play.vidyard.com/yetAnotherVideoId?autoplay=1',
     // Add more video URLs as needed
 };
