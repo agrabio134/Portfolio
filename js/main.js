@@ -135,14 +135,30 @@ function setVideoUrl(videoId) {
 }
 
 function changeVideo(direction) {
+    // Update the current video index based on the direction
     currentVideoIndex += direction;
 
+    // Wrap around the index if it's out of bounds
     if (currentVideoIndex < 0) currentVideoIndex = videoKeys.length - 1;
     if (currentVideoIndex >= videoKeys.length) currentVideoIndex = 0;
 
+    // Get the next video ID
     const nextVideoId = videoKeys[currentVideoIndex];
-    setVideoUrl(nextVideoId);
+
+    // Check if the next video URL exists
+    const nextVideoUrl = videoUrls[nextVideoId];
+
+    if (nextVideoUrl) {
+        // Set the video URL if it exists
+        setVideoUrl(nextVideoId);
+    } else {
+        // If the video URL does not exist, handle it accordingly
+        console.error("Video not found for ID:", nextVideoId);
+        // Switch to image gallery if no video found
+        showPortfolioItem('gallery', ['./img/gallery/1.png', './img/gallery/2.png', './img/gallery/3.png', './img/gallery/4.png', './img/gallery/5.png', './img/gallery/6.png']);
+    }
 }
+
 
 document.getElementById('videoModal').addEventListener('hidden.bs.modal', function () {
     document.getElementById('videoFrame').src = '';
